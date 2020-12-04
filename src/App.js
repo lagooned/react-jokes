@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Joke from './Joke';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="jokes">
+        <Joke question="Dad, did you get a haircut?" punchline="No, I got them all cut." />
+        <Joke punchline="I don't trust stairs. They're always up to something." />
+        <Joke question="Why don't eggs tell jokes?" punchline="They'd crack each other up." />
+        <Joke question="What do you call someone with no body and no nose?" punchline="Nobody nose." />
+        <Joke punchline="This graveyard looks overcrowded. People must be dying to get in." />
+      </div>
     </div>
   );
 }
